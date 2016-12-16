@@ -1,0 +1,4 @@
+[submodule "primo-explore/custom"]
+	path = primo-explore/custom
+	url = https://github.com/smu-libraries/primo-explore-package.git
+	branch = custom
