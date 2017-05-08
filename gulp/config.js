@@ -7,10 +7,24 @@ let mainFile = 'main.js';
 
 let browserify;
 let view ;
+let ve ;
 function setView(_view) {
     view = _view;
 }
 
+function setProxy(_proxy) {
+    this.PROXY_SERVER = _proxy;
+}
+function getProxy(){
+    return PROXY_SERVER;
+}
+function getVe() {
+    return ve;
+}
+
+function setVe(_ve) {
+    ve = _ve;
+}
 function getBrowserify() {
     return browserify;
 }
@@ -18,6 +32,7 @@ function getBrowserify() {
 function setBrowserify(_browserify) {
     browserify = _browserify;
 }
+
 
 function getView(){
     return view;
@@ -108,8 +123,12 @@ module.exports = {
     buildParams: buildParams,
     PROXY_SERVER: PROXY_SERVER,
     setView: setView,
+    setProxy: setProxy,
+    proxy: getProxy,
     view: getView,
     getBrowserify: getBrowserify,
-    setBrowserify: setBrowserify
+    setBrowserify: setBrowserify,
+    getVe: getVe,
+    setVe: setVe
 };
 
