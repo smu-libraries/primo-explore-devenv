@@ -60,10 +60,8 @@
   "engines": {
     "node": "6.9.4"
   },
-  "name": "primo-explore-devenv",
-  "version": "1.0.1",
-    "scripts": {	
-    "start": "gulp web"    
+  "scripts": {
+    "start": "gulp web"
   },
   "repository": "https://github.com/ExLibrisGroup/primo-explore-devenv"
 }
